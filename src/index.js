@@ -1,8 +1,7 @@
-const greet = name => {
-  console.log(`hello ${name}`);
-};
+import { styleBody, addTitle, contact } from "./dom";
+import users, { getPremUsers } from "./data";
 
-greet('mario');
-greet('luigi');
-greet('link');
-greet('chun-li');
+const premUsers = getPremUsers(users);
+console.log(users, premUsers);
+
+console.log("tes2222");
